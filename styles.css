@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin: 0;}
+.inicio{
+    background-color: aquamarine;
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;}
+.titulo1{
+    background-color: rgb(65, 100, 218);
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 50px;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 125px;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: center;}
+.caja1 , .caja2 , .caja3 , .caja4 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 10px 10px rgb(216, 216, 216);
+    border: 2px solid rgb(230, 227, 227);
+    background-color: rgb(230, 227, 227);
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    position: relative;
+    align-items: center;}
+
+.circulo{
+    display: flex;
+    justify-content: right;
+    align-self: self-end;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    }
+.hearth{
+    z-index: 1;
+    position: absolute;
+    margin-right: 80%;
+    margin-top: 5%;}
+.caja1-2{
+    background-image: url('baticueva.jpg');
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height: 150px;
+    width: 100%;}
+.caja2-2{
+    background-image: url('temiscira.jpg');
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height: 150px;
+    width: 100%;
+}
+.caja3-2{
+    background-image: url('mundo.jpg');
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height: 150px;
+    width: 100%;
+}
+.caja4-2{
+    background-image: url('pink.png');
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    height: 150px;
+    width: 100%;}
+.caja1-3 , .caja2-3 , .caja3-3{
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;}
+.caja4-3{
+    text-align: left;
+    padding: 6.5px;
+    display: flex;
+    flex-direction: column;}
+.bat{
+    background-image: url('batman-de-ben-affleck.jpg');
+    background-size: cover;
+    position: relative;
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+    margin: -60px;
+    margin-bottom: 30px;}
+.quinn{
+    background-image: url('quinn.png');
+    background-size: cover;
+    position: relative;
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+    margin: -60px auto;
+    margin-bottom: 32px;}
+.mar{
+    background-image: url('mujer\ maravilla.jpg');
+    background-size: cover;
+    position: relative;
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+    margin: -60px;
+    margin-bottom: 30px;
+}
+.man{
+    background-image: url('superman.png');
+    background-size: cover;
+    position: relative;
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+    margin: -60px;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: rgb(65, 100, 218);
+    color: white;
+    text-align: center;
+}
+.git1 img{
+
+    width: 50px;
+    height: 50px;
+    
+}
+.git1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton{
+    background-color: rgb(65, 100, 218);
+    position: relative;
+    bottom: -20px; 
+    margin: auto;
+    color: white;
+}
+.boton-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+@media (min-width:600px) and (max-width:960px){
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 125px;
+        justify-content: center;
+        padding-bottom: 100px;
+        align-items: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+    .circulo{
+        display: flex;
+        justify-content: right;
+        align-self: self-end;
+        z-index: 3;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top:75%;
+        height:0vw;
+        }
+}
+@media (min-width:961px) and (max-width:2560px){
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 125px;
+        justify-content: center;
+        padding-bottom: 100px;
+        align-items: center;
+        align-content: space-between;
+        flex-wrap: nowrap;
+}
+    .circulo{
+        top:50%;
+        height:0vw;
+        position: absolute;
+        }
+}
